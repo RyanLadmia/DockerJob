@@ -46,7 +46,7 @@ docker ps
 ```
 Cette commande permet d'afficher uniquement les conteneurs actifs (qui tournent actuellement).
 -a = liste tous les conteneurs (actifs et arrêtés).
-- q = liste unique les IDs des conteneurs
+-q = liste unique les IDs des conteneurs
 
 Exemple 1 : aucun conteneur ne tourne.
 
