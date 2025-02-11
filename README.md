@@ -52,7 +52,7 @@ Exemple 1 : aucun conteneur ne tourne.
 
 ![Image n°4](image/4.png)
 
-Exemple 2 : un conteneur en trainde tourner.
+Exemple 2 : un conteneur en train de tourner.
 
 ![Image n°12](image/12.png)
 
@@ -93,6 +93,18 @@ Exemple 1 : sans instructions ( docker run )
 Exemple 2 : avec instructions
 
 ![Image n°14](image/14.png)
+
+```
+docker run -it --rm -p 8080:80 docker/welcome-to-docker
+```
+
+Exemple : 
+
+![Image n°10](image/10.png)
+
+Resultat :
+
+![Image n°11](image/11.png)
 
 **6. Arrêter un conteneur :**
 
