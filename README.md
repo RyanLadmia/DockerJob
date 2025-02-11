@@ -44,8 +44,8 @@ Exemple :
 ```
 docker ps
 ```
-Cette commande permet d'afficher uniquement les conteneurs actifs (qui tournent actuellement).
--a = liste tous les conteneurs (actifs et arrêtés).
+Cette commande permet d'afficher uniquement les conteneurs actifs (qui tournent actuellement).  
+-a = liste tous les conteneurs (actifs et arrêtés).  
 -q = liste unique les IDs des conteneurs
 
 Exemple 1 : aucun conteneur ne tourne.
@@ -80,10 +80,10 @@ Exemple :
 ```
 docker run -d -p 8080:80 docker/welcome-to-docker
 ```
-La commande docker run sert à créer et exécuter un conteneur à partir d'une image :
--d = détachable (ne se coupe pas si le terminal est fermé).
--it = interactif (se coupe si le terminal est fermé).
--p = lier un port du PC avec un port du conteneur.
+La commande docker run sert à créer et exécuter un conteneur à partir d'une image :  
+-d = détachable (ne se coupe pas si le terminal est fermé).  
+-it = interactif (se coupe si le terminal est fermé).  
+-p = lier un port du PC avec un port du conteneur.  
 -rm = supprime le conteneur lorsque qu'il est arrêté ou que le terminal est ferme.
 
 Exemple 1 : sans instructions ( docker run )
