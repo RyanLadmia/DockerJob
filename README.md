@@ -17,13 +17,25 @@ J'envisage de m'orienter vers la conception d'applications puis vers la cybersé
 
 ## Utilisation :
 
-**1.La commande suivante :**
+**1. Vérifier la version de Docker :**
 ```
 docker --version
 ``` 
-permet de vérifier si Docker est installé sur le système et quelle est sa version.  
+Cette commande permet de vérifier si Docker est installé sur le système et quelle est sa version.  
 
 Exemple :
 
 ![Image n°1](image/1.png)
+
+**2. Informations générales :**
+```
+docker info
+```
+Cette commande permet d'afficher des informations générales sur l'installation de Docker (nombre de conteneurs actifs, images stockées, etc.).
+
+Exemple :
+
+![Image n°2](image/2.png)
+![Image n°3](image/3.png)
+
 
