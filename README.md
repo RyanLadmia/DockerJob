@@ -65,3 +65,7 @@ Exemple 1 : aucune image active.
 
 ![Image n°5](image/5.png)
 
+Exemple 2 : image active.
+
+![Image n°13](image/13.png)
+
