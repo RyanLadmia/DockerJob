@@ -17,7 +17,7 @@ J'envisage de m'orienter vers la conception d'applications puis vers la cybersé
 
 ## Utilisation :
 
-La commande suivante :
+**1.La commande suivante :**
 ```
 docker --version
 ``` 
