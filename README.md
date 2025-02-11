@@ -38,4 +38,17 @@ Exemple :
 ![Image n°2](image/2.png)
 ![Image n°3](image/3.png)
 
+**3. Conteneurs actifs :**
+```
+docker ps
+```
+Cette commande permet d'afficher uniquement les conteneurs actifs (qui tournent actuellement).
+
+Exemple 1 : aucun conteneur ne tourne.
+
+![Image n°4](image/4.png)
+
+Exemple 2 : un conteneur en trainde tourner.
+
+![Image n°12](image/12.png)
 
