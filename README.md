@@ -27,6 +27,7 @@ Exemple :
 
 ![Image n°1](image/1.png)
 
+
 **2. Informations générales :**
 ```
 docker info
@@ -37,6 +38,7 @@ Exemple :
 
 ![Image n°2](image/2.png)
 ![Image n°3](image/3.png)
+
 
 **3. Conteneurs actifs :**
 ```
@@ -51,4 +53,15 @@ Exemple 1 : aucun conteneur ne tourne.
 Exemple 2 : un conteneur en trainde tourner.
 
 ![Image n°12](image/12.png)
+
+
+**4. Afficher les images :**
+```
+docker images
+```
+Cette commande permet d'afficher toutes les images Docker stockées localement sur ta machine.
+
+Exemple 1 : aucune image active. 
+
+![Image n°5](image/5.png)
 
