@@ -168,13 +168,74 @@ UN CONTENEUR DOIT ÊTRE ARRÊTE AVANT D'ÊTRE SUPPRIMER.
 ```
 docker rm -f
 ```
-Cette commande est utilisée pour supprimer un conteneur en cours d'exécution.  
+Cette commande est utilisée pour forcer la suppression d'un conteneur en cours d'exécution (actif).  
 Les options pour supprimer un conteneur sont les mêmes que pour la commande d'arrêt des conteneurs.  
-De plus, supprimer plusieurs conteneurs à la fois, arrêter tous les conteneurs actifs ...
+
+- Supprimer plusieurs conteneurs :
+```
+docker rm <nom_du_conteneur> <nom_du_conteneur2>
+```
+
+- Supprimer tous les conteneurs arrêtés :
+```
+docker rm $(docker ps -aq)
+```
+
+- Supprimer une image :
+```
+docker rmi <nom_de_l_image>  
+```
+ou
+```
+docker rmi <ID_de_l_image>
+```
+
+- Supprimer plusieurs images :
+```
+docker rmi <image_1> <image_2> <image_3>
+```
+
+- Supprimer les images inutilisées :
+```
+docker image prune
+```
+- Supprime les images non utilisées par au moins un conteneur.
+
+- Supprimer les images non utilisées :
+```
+docker image prune -a
+```
+- Supprime toutes les images qui ne sont plus utilisées par un conteneur actif ou arrêté
+
+- Forcer la suppression d'une image :
+```
+docker rmi -f <nom_de_l_image>
+```
+ou
+```
+docker rmi -f $(docker images -q)
+```
+- Supprime toutes les images, même celles utilisées.
 
 Exemple : 
 
 ![Image n°18](image/18.png)
+
+**8. Les erreurs :**
+
+- Suppression d'une image utilisée par un conteneur actif :  
+
+Si tu essaies de supprimer une image utilisée par un conteneur actif, tu auras une erreur du type :
+```
+Error response from daemon: conflict: unable to remove repository reference ...
+```
+
+Correction :  
+Arrêter et supprimer les conteneurs liés avant.  
+```
+docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+docker rmi <nom_de_l_image>
+```
 
 
 
