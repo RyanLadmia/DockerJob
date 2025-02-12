@@ -48,6 +48,23 @@ docker images
   
 
 
-# Modification du code:
+# Modification du code ligne 16 :
 
 ![Image n°8](welcome-to-docker/image/8.png)
+
+
+
+# Arrêt et suppression :
+
+![Image n°9](welcome-to-docker/image/9.png)
+
+
+
+# Création d'une nouvelle image :
+
+![Image n°10](welcome-to-docker/image/10.png)
+
+
+# Visualisation :
+
+![Image n°11](welcome-to-docker/image/11.png)

@@ -13,9 +13,7 @@ const App = () => {
         <p style={{ marginTop: "10px", marginBottom: "50px" }}>
           You ran your first container.
         </p>
-        <div className="container-image">
-          <img src="image/7.png" alt="BeauGosse" />
-        </div>
+        <h2 style={{ marginBottom: "0px" }}>Ryan was here</h2>
         <div>
           <a
             target="_blank"
