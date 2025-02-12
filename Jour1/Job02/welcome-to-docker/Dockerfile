@@ -1,5 +1,5 @@
-# Start your image with a node base image
-FROM node:18-alpine
+# Start your image with a node base image (updated to Node 20)
+FROM node:20-alpine
 
 # The /app directory should act as the main application directory
 WORKDIR /app
@@ -11,8 +11,10 @@ COPY package*.json ./
 COPY ./src ./src
 COPY ./public ./public
 
-# Install node packages, install serve, build the app, and remove dependencies at the end
-RUN npm install \
+# Clean npm cache, update npm to the latest version, install packages, and build
+RUN npm cache clean --force \
+    && npm install -g npm@latest \
+    && npm install \
     && npm install -g serve \
     && npm run build \
     && rm -fr node_modules
