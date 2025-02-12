@@ -170,6 +170,11 @@ docker rm -f
 ```
 Cette commande est utilisée pour supprimer un conteneur en cours d'exécution.  
 Les options pour supprimer un conteneur sont les mêmes que pour la commande d'arrêt des conteneurs.  
-Exemple : supprimer plusieurs conteneurs à la fois, arrêter tous les conteneurs actifs ...
+De plus, supprimer plusieurs conteneurs à la fois, arrêter tous les conteneurs actifs ...
+
+Exemple : 
+
+![Image n°18](image/18.png)
+
 
 
