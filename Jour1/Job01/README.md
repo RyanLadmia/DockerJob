@@ -117,7 +117,7 @@ ou
 docker stop <id_du_conteneur>
 ```
 
-Ces commande envoient un signal SIGTERM au conteneur, lui demandant de s'arrêter proprement. Si le conteneur ne répond pas dans un délai donné (10 secondes par défaut), Docker envoie un signal SIGKILL pour forcer l'arrêt.
+Ces commande envoient un signal SIGTERM au conteneur, lui demandant de s'arrêter proprement en lui laissant le temps de le faire. Si le conteneur ne répond pas dans un délai donné (10 secondes par défaut), Docker envoie un signal SIGKILL pour forcer l'arrêt.
 
 On peut aussi arrêter plusieurs conteneurs à la fois :
 
@@ -130,5 +130,28 @@ De plus on peut arrêter tous les conteneurs actifs :
 ```
 docker stop $(docker ps -q)
 ```
-
 docker ps -q récupère tous les IDs des conteneurs actifs, et docker stop les arrête tous en une seule commande.
+
+Exemple avec le nom :
+
+![Image n°15](image/15.png)
+
+Exemple avecc l'ID :
+
+![Image n°16](image/16.png)
+
+
+La commande suivante :
+
+```
+docker kill <nom_du_conteneur>
+```
+
+envoie un signal SIGKILL pour arrêter immédiatement le conteneur, sans lui laisser le temps de se fermer proprement.
+
+Exemple :
+
+![Image n°17](image/17.png)
+
+
+
