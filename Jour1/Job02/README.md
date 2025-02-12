@@ -68,3 +68,19 @@ docker images
 # Visualisation :
 
 ![Image n°11](welcome-to-docker/image/11.png)
+
+
+# Connexion à mon compte :
+
+![Image n°12](welcome-to-docker/image/12.png)
+
+
+# Création d'une nouvelle image avec un nom différent :
+
+![Image n°13](welcome-to-docker/image/13.png)
+
+
+# Tag et publication :
+
+![Image n°14](welcome-to-docker/image/14.png)
+

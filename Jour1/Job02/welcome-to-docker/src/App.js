@@ -14,6 +14,9 @@ const App = () => {
           You ran your first container.
         </p>
         <h2 style={{ marginBottom: "0px" }}>Ryan was here</h2>
+        <p style={{ marginTop: "10px", marginBottom: "50px" }}>
+            Code is like humor. When you have to explain it, it’s bad.
+        </p>
         <div>
           <a
             target="_blank"
