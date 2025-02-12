@@ -154,5 +154,20 @@ Exemple :
 
 ![Image n°17](image/17.png)
 
+**7. Supprimer un conteneur :**
+
+```
+docker rm <nom_du_conteneur>
+```
+```
+docker rm <id_du_conteneur>
+```
+Cette commande permet de supprimer un conteneur.  
+UN CONTENEUR DOIT ÊTRE ARRÊTE AVANT D'ÊTRE SUPPRIMER.  
+
+```
+docker rm -f
+```
+Cette commande est utilisée pour supprimer un conteneur en cours d'exécution.
 
 
