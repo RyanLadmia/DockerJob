@@ -16,4 +16,4 @@ J'envisage de m'orienter vers la conception d'applications puis vers la cybersé
 
 ## A Propos de ce projet :  
 
-Avec ce projet, j'ai découvert les bases ded l'utilisation de Docker.
+Avec ce projet, j'ai découvert les bases de l'utilisation de Docker.
