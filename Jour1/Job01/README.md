@@ -168,6 +168,8 @@ UN CONTENEUR DOIT ÊTRE ARRÊTE AVANT D'ÊTRE SUPPRIMER.
 ```
 docker rm -f
 ```
-Cette commande est utilisée pour supprimer un conteneur en cours d'exécution.
+Cette commande est utilisée pour supprimer un conteneur en cours d'exécution.  
+Les options pour supprimer un conteneur sont les mêmes que pour la commande d'arrêt des conteneurs.  
+Exemple : supprimer plusieurs conteneurs à la fois, arrêter tous les conteneurs actifs ...
 
 
