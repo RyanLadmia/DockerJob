@@ -39,5 +39,11 @@ docker images
 ```
 
 ![Image n°5](welcome-to-docker/image/5.png)
+  
+
+
+# Accèder au conteneur :
+  
+![Image n°6](welcome-to-docker/image/6.png)
 
 
