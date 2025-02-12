@@ -233,8 +233,6 @@ ou
 docker rmi -f $(docker images -q)
 ```
  -f force la suppression même si l’image est utilisée.
-- Supprime toutes les images, même celles utilisées.
-
 
 
 Exemple : 
