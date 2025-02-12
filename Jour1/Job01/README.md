@@ -97,6 +97,7 @@ Exemple 2 : avec instructions
 ```
 docker run -it --rm -p 8080:80 docker/welcome-to-docker
 ```
+ou
 
 Exemple : 
 
