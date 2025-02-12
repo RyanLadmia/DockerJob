@@ -23,7 +23,7 @@ docker run -p 3000:3000 welcome-to-docker
   
 
 
-# Vérifier si l'image est lancée :
+# Vérifier si le conteneur est lancée :
 ```
 docker ps
 ```
