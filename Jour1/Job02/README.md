@@ -45,5 +45,9 @@ docker images
 # Accèder au conteneur :
   
 ![Image n°6](welcome-to-docker/image/6.png)
+  
 
 
+# Modification du code:
+
+![Image n°8](welcome-to-docker/image/8.png)
