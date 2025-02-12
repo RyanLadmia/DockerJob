@@ -137,7 +137,7 @@ Exemple avec le nom :
 
 ![Image n°15](image/15.png)
 
-Exemple avecc l'ID :
+Exemple avec l'ID :
 
 ![Image n°16](image/16.png)
 
@@ -153,6 +153,7 @@ envoie un signal SIGKILL pour arrêter immédiatement le conteneur, sans lui lai
 Exemple :
 
 ![Image n°17](image/17.png)
+  
 
 **7. Supprimer un conteneur :**
 
@@ -219,7 +220,7 @@ Cela supprime les images non utilisées par au moins un conteneur.
 ```
 docker image prune -a
 ```
-Cela supprime toutes les images qui ne sont plus utilisées par un conteneur actif ou arrêté
+Cela supprime toutes les images qui ne sont plus utilisées par un conteneur actif ou arrêté  
 
 
 
@@ -252,11 +253,25 @@ Error response from daemon: conflict: unable to remove repository reference ...
 ```
 
 Correction : 
- 
+
 Arrêter et supprimer les conteneurs liés avant.  
 ```
 docker stop $(docker ps -q) && docker rm $(docker ps -aq)
 docker rmi <nom_de_l_image>
+```
+  
+- docker rm $(docker ps -aq) ne supprime pas les conteneurs actifs :  
+  
+Il faut utiliser -f pour forcer la suppression :  
+```
+docker rm -f $(docker ps -aq)
+```  
+  
+- docker image prune ne supprime pas toutes les images :  
+  
+Il faut utiliser -a pour supprimer toutes les images inutilisées.  
+```
+docker image prune -a
 ```
 
 
