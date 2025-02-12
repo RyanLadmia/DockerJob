@@ -11,3 +11,15 @@ Lors de la création de l'image, j'ai eu un message d'erreur indiquant que la ve
 J'ai ensuite réussi à créer l'image.  
   
 ![Image n°2](welcome-to-docker/image/2.png)
+  
+  
+
+# Lancement de l'image Docker et du conteneur :  
+```
+docker run -p 3000:3000 welcome-to-docker
+```
+
+![Image n°3](welcome-to-docker/image/3.png)
+
+
+
