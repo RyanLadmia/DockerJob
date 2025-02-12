@@ -21,5 +21,11 @@ docker run -p 3000:3000 welcome-to-docker
 
 ![Image n°3](welcome-to-docker/image/3.png)
 
+# Vérifier si l'image est lancée :
+```
+docker ps
+```
+  
+![Image n°4](welcome-to-docker/image/4.png)
 
 
