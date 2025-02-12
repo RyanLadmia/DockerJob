@@ -199,13 +199,13 @@ docker rmi <image_1> <image_2> <image_3>
 ```
 docker image prune
 ```
-- Supprime les images non utilisées par au moins un conteneur.
+Supprime les images non utilisées par au moins un conteneur.
 
 - Supprimer les images non utilisées :
 ```
 docker image prune -a
 ```
-- Supprime toutes les images qui ne sont plus utilisées par un conteneur actif ou arrêté
+Supprime toutes les images qui ne sont plus utilisées par un conteneur actif ou arrêté
 
 - Forcer la suppression d'une image :
 ```
@@ -215,6 +215,7 @@ ou
 ```
 docker rmi -f $(docker images -q)
 ```
+ -f force la suppression même si l’image est utilisée.
 - Supprime toutes les images, même celles utilisées.
 
 Exemple : 
