@@ -83,7 +83,7 @@ docker run -d -p 8080:80 docker/welcome-to-docker
 La commande docker run sert à créer et exécuter un conteneur à partir d'une image :  
 -d = détachable (ne se coupe pas si le terminal est fermé).  
 -it = interactif (se coupe si le terminal est fermé).  
--p = lier un port du PC avec un port du conteneur.  
+-p = lier un port du PC avec un port du conteneur. Ici le port 8080 est du PC est lié au port 80 du conteneur.  
 -rm = supprime le conteneur lorsque qu'il est arrêté ou que le terminal est ferme.
 
 Exemple 1 : sans instructions ( docker run )
