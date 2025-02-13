@@ -87,6 +87,11 @@ docker images
 Dans Docker desktop :
 
 ![Image n°15](welcome-to-docker/image/15.png)
+ 
+
+# Récupérer l'image de quelqu'un :
+
+![Image n°16](welcome-to-docker/image/16.png)
 
 
 
