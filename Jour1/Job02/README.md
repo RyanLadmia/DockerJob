@@ -84,3 +84,9 @@ docker images
 
 ![Image n°14](welcome-to-docker/image/14.png)
 
+Dans Docker desktop :
+
+![Image n°15](welcome-to-docker/image/15.png)
+
+
+
