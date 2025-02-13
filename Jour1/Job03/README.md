@@ -29,7 +29,40 @@ docker run -d -p 8600:8080 pengbai/docker-supermario
 
 ![Image n°5](image/5.png)
 
-- Méthode n°2 :
+Le résultat se trouve à localhost:8600 :
+
+![Image n°6](image/6.png)
+
+
+- Méthode n°2 :  
+
+Lancer un conteneur sans lui donner de port :
+```
+docker run -d pengbai/docker-supermario
+```
+
+![Image n°7](image/7.png)
+
+
+Puis aller dans Images,  
+Puis cliquer sur le lien de l'image :
+
+![Image n°8](image/8.png)
+
+Puis aller sur Run :
+
+![Image n°9](image/9.png)
+
+Puis attribuer manuellement un port :
+
+![Image n°10](image/10.png)
+
+![Image n°10.5](image/10.5.png)
+
+
+
+
+
 
 
 
