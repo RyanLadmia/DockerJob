@@ -123,19 +123,17 @@ Cliquer sur stop sans utiliser le Terminal :
 ```
 docker rm <nom_du_conteneur>
 ```
+ou
+```
+docker rm <id_du_conteneur>
+```
 
 ![Image n°23](image/23.png)
 
 
-- 2ème méthode avec l'ID :
-```
-docker rm <id_du_conteneur>
-```
+- 2ème méthode en cliquant :
+
 ![Image n°24](image/24.png)
-
-
-
-- 3ème méthode en cliquant :
 
 ![Image n°25](image/25.png)
 
