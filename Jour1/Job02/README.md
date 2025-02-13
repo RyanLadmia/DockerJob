@@ -113,8 +113,27 @@ Puis tapper j'ai tappé cette commande dans le terminal de VsCode :
 
 ![Image n°18](welcome-to-docker/image/18.png)
 
+Le dossier contenant le code de l'image a été ajouté. Je peux maintenant le modifier.
+
 
 # Reconstruction de l'image de Ibrahim après l'avoir modifiée :
 
 
 ![Image n°19](welcome-to-docker/image/19.png)
+
+
+# Resultat de la modification :
+
+![Image n°20](welcome-to-docker/image/20.png)
+
+
+# Tag et push sur Docker hub :
+
+
+![Image n°21](welcome-to-docker/image/21.png)
+
+
+# Resultat sur Docker Hub :
+
+
+![Image n°22](welcome-to-docker/image/22.png)
