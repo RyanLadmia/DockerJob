@@ -59,6 +59,31 @@ Puis attribuer manuellement un port :
 
 ![Image n°10.5](image/10.5.png)
 
+Le résultat se trouve à localhost:8888
+
+![Image n°11](image/11.png)
+
+# Fenêtre Images :
+
+Lorsque les conteneurs se lance voici ce qu'il se passe :
+
+![Image n°12](image/12.png)
+
+# Résultats des conteneurs qui tournent :
+
+![Image n°13](image/13.png)
+
+
+# Voici les capture d'écran du jeu dans le navigateur :
+
+![Image n°14](image/14.png)  ![Image n°15](image/15.png)
+![Image n°16](image/16.png)  ![Image n°17](image/17.png)
+
+
+
+
+
+
 
 
 
