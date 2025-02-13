@@ -12,7 +12,7 @@ const App = () => {
       <header className="App-header">
         <h1 style={{ 
           marginBottom: "0px",
-          background: 'linear-gradient(45deg, #ff0000, #800000)',
+          background: 'linear-gradient(45deg,rgb(19, 247, 247),rgb(55, 235, 19))',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           fontSize: '3em'
@@ -22,10 +22,10 @@ const App = () => {
         <p style={{ 
           marginTop: "10px", 
           marginBottom: "50px",
-          color: '#ff3333',
+          color: '(rgba(229, 255, 0, 0.99))',
           textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
         }}>
-          ta 18 ans le temp passe vite 
+          Les romans asiatiques sont surcôtés.
         </p>
       </header>
     </div>

@@ -8,7 +8,12 @@ Lors de la création de l'image, j'ai eu un message d'erreur indiquant que la ve
 
 ![Image n°1](welcome-to-docker/image/1.png)
 
-J'ai ensuite réussi à créer l'image.  
+J'ai ensuite réussi à créer l'image :
+```
+docker build -t welcome-to-docker .
+```  
+!!! Ne pas oublier l'espace et le point à la fin de la commande.  
+Le . à la fin de la commande fait référence au répertoire actuel, donc Docker va chercher le Dockerfile et construire l'image à partir des fichiers présents dans ce dossier.
   
 ![Image n°2](welcome-to-docker/image/2.png)
   
@@ -109,3 +114,7 @@ Puis tapper j'ai tappé cette commande dans le terminal de VsCode :
 ![Image n°18](welcome-to-docker/image/18.png)
 
 
+# Reconstruction de l'image de Ibrahim après l'avoir modifiée :
+
+
+![Image n°19](welcome-to-docker/image/19.png)
