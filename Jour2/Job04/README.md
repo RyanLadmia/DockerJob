@@ -22,5 +22,11 @@ phpinfo();
 
 ![Image n°5](image/5.png)
 
+# Arrêt du conteneur :
 
+![Image n°5](image/6.png)
+
+Résultat dans le navigateur :  
+
+![Image n°6](image/7.png)
 
