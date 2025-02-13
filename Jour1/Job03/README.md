@@ -80,15 +80,60 @@ Lorsque les conteneurs se lance voici ce qu'il se passe :
 ![Image n°16](image/16.png)  ![Image n°17](image/17.png)
 
 
+# Arrêter un conteneur par son ID :
+
+- 1ère façon de trouver l'ID :
+```
+docker ps
+```
+![Image n°18](image/18.png)
+
+```
+docker ps -a
+```
+![Image n°19](image/19.png)
 
 
 
+- 2ème façon de trouver l'ID :
+
+![Image n°20](image/20.png)
+
+
+- 1ère façon d'arrêter un conteneur :
+```
+docker stop <id_du_conteneur>
+```
+
+![Image n°21](image/21.png)
+
+- 2ème façon :  
+Cliquer sur stop sans utiliser le Terminal :
+
+![Image n°22](image/22.png)
+
+
+# Supprimer un conteneur :
+
+- 1ère méthode avec le nom :
+```
+docker rm <nom_du_conteneur>
+```
+![Image n°23](image/23.png)
+
+
+- 2ème méthode avec l'ID :
+```
+docker rm <id_du_conteneur>
+```
+![Image n°24](image/24.png)
 
 
 
+- 3ème méthode en cliquant :
+
+![Image n°25](image/25.png)
 
 
 
-
-
-
+ 
