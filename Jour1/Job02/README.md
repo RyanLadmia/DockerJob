@@ -94,4 +94,18 @@ Dans Docker desktop :
 ![Image n°16](welcome-to-docker/image/16.png)
 
 
+# Repérer le dossier contenant le code :
+
+Ouvrir le Terminel de Docker Desktop et tapper :
+```
+docker exec -it Const-Ibrahim sh
+```
+
+![Image n°17](welcome-to-docker/image/17.png)
+
+
+Puis tapper j'ai tappé cette commande dans le terminal de VsCode :
+
+![Image n°18](welcome-to-docker/image/18.png)
+
 
