@@ -86,11 +86,15 @@ Lorsque les conteneurs se lance voici ce qu'il se passe :
 ```
 docker ps
 ```
+Afficher les conteneurs actifs.  
+
 ![Image n°18](image/18.png)
 
 ```
 docker ps -a
 ```
+Afficher tous les conteneurs.  
+
 ![Image n°19](image/19.png)
 
 
@@ -139,4 +143,30 @@ docker rm <id_du_conteneur>
 
 
 
- 
+# Supprimer une image :
+
+- Se placer dans le menu Images :
+
+![Image n°26](image/26.png)
+
+
+- 1ère façon de supprimer une image :
+```
+docker rmi <id_de_l'image>
+```
+ou
+```
+docker rmi <nom_de_l'image>
+```
+
+![Image n°27](image/27.png)
+
+
+- 2ème façon de supprimer une image :  
+En utilisant Docker Desktop :
+
+![Image n°28](image/28.png)
+
+![Image n°29](image/29.png)
+
+
