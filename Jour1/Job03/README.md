@@ -104,7 +104,11 @@ docker ps -a
 ```
 docker stop <id_du_conteneur>
 ```
-
+ou
+```
+docker stop <nom_du_conteneur>
+```
+Résultat :
 ![Image n°21](image/21.png)
 
 - 2ème façon :  
@@ -119,6 +123,7 @@ Cliquer sur stop sans utiliser le Terminal :
 ```
 docker rm <nom_du_conteneur>
 ```
+
 ![Image n°23](image/23.png)
 
 
