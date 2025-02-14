@@ -38,7 +38,7 @@ docker volume create game-results
 # Exécution du conteneur avec le volume :
 
 ```
-docker run -d -p 8080:80 --name tictactoe-game -v game-results:/app/results tic-tac-toe
+docker run -d -p 8080:80 -v game-results:/usr/share/nginx/html --name tictactoe-game tic-tac-toe
 ```
 
 -v game-results:/app/results → Monte un volume game-results sur /app/results dans le conteneur.
