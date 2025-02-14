@@ -1,20 +1,34 @@
-# nginx : C'est un serveur web. Il permet d’héberger des sites et de servir des fichiers HTML/PHP.
-# alpine : C'est une version très légère de l'image nginx, basée sur Alpine Linux (un système d'exploitation minimaliste, optimisé pour les conteneurs).
-
 FROM nginx:alpine
 
-# Cette commande copie le fichier index.html (présent dans le même dossier que le Dockerfile) vers le dossier /usr/share/nginx/html/ du conteneur.
+# Installer PHP et ses extensions
+RUN apk add --no-cache \
+    php82 \
+    php82-fpm \
+    php82-json
 
+# Copier les fichiers
 COPY index.html /usr/share/nginx/html/
-
-# Même principe que la ligne précédente, sauf que cette fois, on copie save.php, un fichier PHP qui pourrait contenir du code pour enregistrer des données (ex: sauvegarder une partie de morpion).
-
 COPY save.php /usr/share/nginx/html/
-
-# Copie le fichier results.json dans le même dossier du conteneur.
-
 COPY results.json /usr/share/nginx/html/
 
-# Indique que le conteneur va écouter sur le port 80 (le port HTTP par défaut).
+# Configuration Nginx avec support PHP
+RUN echo 'server { \
+    listen 80; \
+    root /usr/share/nginx/html; \
+    index index.html; \
+    location ~ \.php$ { \
+        fastcgi_pass 127.0.0.1:9000; \
+        fastcgi_index index.php; \
+        include fastcgi_params; \
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
+
+# Permissions pour PHP
+RUN chown -R nginx:nginx /usr/share/nginx/html \
+    && chmod 777 /usr/share/nginx/html/results.json
 
 EXPOSE 80
+
+# Démarrer PHP-FPM et Nginx
+CMD php-fpm82 && nginx -g 'daemon off;'
