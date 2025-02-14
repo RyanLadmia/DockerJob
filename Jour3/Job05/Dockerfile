@@ -1,39 +1,20 @@
-# Utilisation d'Alpine avec Nginx et PHP-FPM
-FROM alpine:latest
+# nginx : C'est un serveur web. Il permet d’héberger des sites et de servir des fichiers HTML/PHP.
+# alpine : C'est une version très légère de l'image nginx, basée sur Alpine Linux (un système d'exploitation minimaliste, optimisé pour les conteneurs).
 
-# Installation de Nginx, PHP et ses extensions
-RUN apk add --no-cache nginx php php-fpm php-json php-mbstring
+FROM nginx:alpine
 
-# Copier les fichiers du projet
+# Cette commande copie le fichier index.html (présent dans le même dossier que le Dockerfile) vers le dossier /usr/share/nginx/html/ du conteneur.
+
 COPY index.html /usr/share/nginx/html/
+
+# Même principe que la ligne précédente, sauf que cette fois, on copie save.php, un fichier PHP qui pourrait contenir du code pour enregistrer des données (ex: sauvegarder une partie de morpion).
+
 COPY save.php /usr/share/nginx/html/
+
+# Copie le fichier results.json dans le même dossier du conteneur.
+
 COPY results.json /usr/share/nginx/html/
 
-# Donner les permissions nécessaires
-RUN chown -R nginx:nginx /usr/share/nginx/html && \
-    chmod -R 755 /usr/share/nginx/html
+# Indique que le conteneur va écouter sur le port 80 (le port HTTP par défaut).
 
-# Configuration minimale de Nginx pour supporter PHP
-RUN mkdir -p /etc/nginx/conf.d && \
-    echo 'server { \
-    listen 80; \
-    root /usr/share/nginx/html; \
-    index index.html; \
-    location / { \
-        try_files $uri $uri/ =404; \
-    } \
-    location ~ \.php$ { \
-        fastcgi_pass 127.0.0.1:9000; \
-        fastcgi_index index.php; \
-        include fastcgi.conf; \
-    } \
-}' > /etc/nginx/conf.d/default.conf
-
-# Définir les volumes pour la persistance des fichiers
-VOLUME /usr/share/nginx/html/results.json
-
-# Exposer le port 80
 EXPOSE 80
-
-# Lancer PHP-FPM et Nginx en parallèle
-CMD php-fpm81 -D && nginx -g "daemon off;"
