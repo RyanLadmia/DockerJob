@@ -106,6 +106,10 @@ Ouvrir le Terminel de Docker Desktop et tapper :
 docker exec -it Const-Ibrahim sh
 ```
 
+Pour explorer l'intérieur d'un conteneur pour localiser les fichiers ou dossiers avant de les copier, tu peux utiliser la commande docker exec pour obtenir un accès en ligne de commande au conteneur.  
+Par exemple, si tu veux naviguer dans les dossiers du conteneur pour vérifier où se trouve le code.  
+Cela te permet d'accéder à un shell dans le conteneur, où tu peux naviguer dans le système de fichiers et localiser le code. Une fois que tu as trouvé le dossier, tu peux utiliser docker cp pour le récupérer.
+
 ![Image n°17](welcome-to-docker/image/17.png)
 
 
