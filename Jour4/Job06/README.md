@@ -20,7 +20,11 @@
   
 
 ![Image n°5](image/5.png)  
+  
 
+Authentification :  
+
+![Image n°6](image/6.png)  
 
 
 
