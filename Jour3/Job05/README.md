@@ -56,6 +56,7 @@ localhost:8080 :
 ```
 docker volume ls
 ```
+Lister tous les volumes Docker disponibles sur le système.
 
 ![Image n°9](image/9.png)
 
@@ -64,8 +65,32 @@ docker volume ls
 ```
  docker volume inspect game-results
 ```
+Cette commande affiche les détails du volume nommé game-results, notamment :  
+Son chemin sur l'hôte (Mountpoint)  
+Son ID unique  
+Son utilisation par les conteneurs  
+Son driver de stockage
+ 
 
 ![Image n°10](image/10.png)
 
 
-# 
+# Lister les fichiers du conteneurs :
+
+```
+docker exec -it tictactoe-game ls /usr/share/nginx/html
+```
+Lister les fichiers dans /usr/share/nginx/html à l'intérieur du conteneur.
+
+![Image n°11](image/11.png)
+
+
+
+# Afficher les résultats :
+
+```
+docker exec -it tictactoe-game cat /usr/share/nginx/html/results.json
+```
+ Afficher le contenu du fichier results.json dans le conteneur.  
+
+![Image n°12](image/12.png)
