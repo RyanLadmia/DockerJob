@@ -60,6 +60,16 @@ Lister tous les volumes Docker disponibles sur le système.
 
 ![Image n°9](image/9.png)
 
+
+# Inspecter le conteneur : 
+```
+docker exec -it tictactoe-game sh
+```
+
+![Image n°13](image/13.png)
+
+
+
 # Inspecter le volume :
 
 ```
@@ -73,6 +83,7 @@ Son driver de stockage
  
 
 ![Image n°10](image/10.png)
+
 
 
 # Lister les fichiers du conteneurs :
@@ -94,3 +105,12 @@ docker exec -it tictactoe-game cat /usr/share/nginx/html/results.json
  Afficher le contenu du fichier results.json dans le conteneur.  
 
 ![Image n°12](image/12.png)
+
+
+# Arrêter le conteneur :
+
+```
+docker stop <id_du_conteneur>
+```
+
+![Image n°14](image/14.png)
