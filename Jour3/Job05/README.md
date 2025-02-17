@@ -50,3 +50,22 @@ docker run -d -p 8080:80 -v game-results:/usr/share/nginx/html --name tictactoe-
 localhost:8080 :  
 
 ![Image n°8](image/8.png)
+
+# Vérifier la création du volume :
+
+```
+docker volume ls
+```
+
+![Image n°9](image/9.png)
+
+# Inspecter le volume :
+
+```
+ docker volume inspect game-results
+```
+
+![Image n°10](image/10.png)
+
+
+# 
