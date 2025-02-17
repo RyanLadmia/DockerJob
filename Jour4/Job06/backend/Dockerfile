@@ -1,11 +1,11 @@
-# Utiliser Node.js 22 Alpine
-FROM node:22-alpine
+# Utiliser Node.js 16 Alpine
+FROM node:16-alpine
 
 # Définir le répertoire de travail
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copier package.json et package-lock.json pour installer les dépendances
-COPY package.json ./
+COPY package*.json ./
 
 # Installer les dépendances
 RUN npm install
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Lancer l'application
-CMD ["node", "server.js"]
+CMD ["npm", "start"]

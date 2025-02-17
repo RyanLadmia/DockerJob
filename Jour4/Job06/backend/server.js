@@ -1,11 +1,12 @@
 const express = require('express');
 const mysql = require('mysql2');
+const cors = require('cors');
 // Configuration de la base de données
 const dbConfig = {
-host: process.env.DB_HOST || 'mysql_container',
+host: process.env.DB_HOST || 'database',
 user: process.env.DB_USER || 'root',
 password: process.env.DB_PASSWORD || 'root',
-database: process.env.DB_NAME || 'reseautage',
+database: process.env.DB_NAME || 'projetdb',
 };
 
 let connection;
@@ -35,6 +36,8 @@ throw err;
 connectToDatabase();
 // Initialisation de l'application Express
 const app = express();
+// Activation de CORS
+app.use(cors());
 // Route pour la racine
 app.get('/', (req, res) => {
 res.send('Bienvenue sur l\'API du backend de votre projet Docker !');
