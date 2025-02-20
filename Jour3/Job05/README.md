@@ -63,7 +63,7 @@ Lister tous les volumes Docker disponibles sur le système.
 
 # Inspecter le conteneur : 
 ```
-docker exec -it tictactoe-game sh
+docker exec -it tictactoe-game ls -l
 ```
 
 ![Image n°13](image/13.png)
